@@ -7,8 +7,10 @@ import { QUERY_PRODUCTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif"
 
+
 function ProductList() {
   const [state, dispatch] = useStoreContext();
+  const store = Redux.createStore(counterReducer)
 
   const { currentCategory } = state;
 

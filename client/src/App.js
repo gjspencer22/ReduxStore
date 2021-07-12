@@ -16,6 +16,7 @@ import { StoreProvider } from "./utils/GlobalState";
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
 
+const store = Redux.createStore(counterReducer)
 const client = new ApolloClient({
   request: (operation) => {
     const token = localStorage.getItem('id_token')
@@ -51,5 +52,6 @@ function App() {
 
   );
 }
+
 
 export default App;

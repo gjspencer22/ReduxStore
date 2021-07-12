@@ -1,4 +1,5 @@
 import React from "react";
+const store = Redux.createStore(counterReducer)
 
 function Jumbotron({ children }) {
   return (
